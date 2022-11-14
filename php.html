@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        // this symbol is single line of comment
+        # this symbol is for single line of comment
+
+        /*long line of comment, can also use comment inside code line */
+
+    ?>
+    <?php
+        $txt = "Orlando Nava";
+        echo "I love $txt!";
+        $x = 5;
+        $y = 5;
+
+        echo "$txt";
+        echo "<br>";
+        echo "$x";
+        echo "<br>"
+
+        echo $x + $y;
+    ?>
+    <?php
+        function myTest(){
+            //using x inside the function will generate an error
+            echo "<p>Variable x inside function is: $x</p>"
+        }
+
+        myTest();
+
+        echo "<p>Variable x outisde function is: $x</p>";
+    ?>
+
+    <?php
+        function myTest(){
+            $x = 10;
+            echo "<p>The number is $10"</p>;
+        }
+
+        echo "<p>The number is $10</p>"; / This will generate error, because the variable is in the function.
+    ?>
+
+    <?php
+        $x = 5;
+        $y = 5;
+
+        function addVariable(){
+            global $x, $y;
+            $y = $x + $y;
+        }
+
+        addVariable();
+        echo $y; // add the numbers
+    ?>
+</body>
+</html>
