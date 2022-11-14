@@ -71,5 +71,28 @@
         addFunction();
         echo $y;
     ?>
+        /use static to reuse or save variable preventing from deleting after excuted.
+    <?php
+        function incrementTest(){
+            static $x = 0;
+            echo $x;
+            $x++;
+        }
+
+        incrementTest();
+        echo "<br>";
+        incrementTest();
+        echo "<br>";
+        incrementTest();
+        echo "<br>";
+
+    ?>
+
+    <?php
+        $x = 698;
+        var_dump($x); / this return what data type
+        $cars = array("Toyota","Nissan","Mitsubishi");
+        var_dump($cars);
+    ?>
 </body>
 </html>
