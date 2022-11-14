@@ -47,7 +47,7 @@
         echo "<p>The number is $10</p>"; / This will generate error, because the variable is in the function.
     ?>
 
-    <?php
+    <?php /using global keyword
         $x = 5;
         $y = 5;
 
@@ -58,6 +58,18 @@
 
         addVariable();
         echo $y; // add the numbers
+    ?>
+
+    <?php
+        $x = 5;
+        $y = 10;
+
+        function addFunction(){
+            $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+        }
+
+        addFunction();
+        echo $y;
     ?>
 </body>
 </html>
