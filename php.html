@@ -152,7 +152,125 @@
             echo(sqrt(1) . "<br>");/1
             echo(sqrt(9));/3
         ?>
-
         
+        /*PHP Constant is an identifier. Value cannot be change during the script*/
+        Syntax:
+            define(name, value, case-insensitive);
+
+        ex:
+            <?php
+                define("Greetings","Welcome to w3schools.com");
+                echo Greetings;
+            ?>
+
+        /Constant Arrays
+        /Constant are global
+
+        <?php
+            define("cars",["Alfa Romeo",
+            "BMW",
+            "Toyota"
+            ]);
+            echo cars[0];
+        ?>
+
+        /ex. constant as global
+        <?php
+            define("Greetings", "Welcome Orlando");
+            function myfunction(){
+                echo Greetings;
+            }
+        ?>
+
+        myfunction();
+
+
+        /php arithmetic Operators
+        + addtion
+        - subtraction
+        * multiplication
+        / division
+        % modulus
+        ** exponentiation
+
+
+    /php Assignment Operators 
+    x = y
+    x += y
+    x *= y
+    x/= y
+    x %= y
+
+    /php Comparison Operators
+     == equal
+     === Identical
+     != not equal
+     <> Not equal 
+     ! == Not identical = returns true if x is not equal to y, or they are not of the same type 
+     > greater than
+     < less than
+     >=
+     <= 
+     <=> spaceship
+
+     /PHP Logical Operators 
+     and = True if both $x and $y are true 
+     ex.
+            <?php
+                $x = 100;
+                $y = 50;
+
+                if ($x == 100 and $y == 50){
+                    echo "Hello";
+                };
+                
+            ?>
+
+    or = True if either $x or $y is true 
+    ex.
+                <?php
+                    $x = 100;
+                    $y = 50;
+
+                    if($x = 100 or $y = 50){
+                        echo "Hello Orlando"
+                    };
+                ?>
+    xor = True if either $x or $y is true, but not both
+    ex.         <?php
+                    $x = $100;
+                    $y = 50;
+
+                    if($x == 100 xor $y == 80){
+                        echo "Hello Orlando";
+                    };
+                ?>
+    
+    && = result True if either $x and $y are true
+                <?php
+                    if($x == 100 && $y == 50){
+                        echo "Hello world";
+                    };
+                ?>
+            
+    || = return True if either $x or $y are true
+    ex.
+
+                    <?php
+                    $x = 100;
+                    $y = 50;
+                        if ($x = 100 || $y == 50){
+                            echo "Hello Orlando"
+                        };
+                    ?>
+
+    ! - return True if $x is not true 
+    ex. 
+                        <?php
+                            $x = 100;
+                            if ($x !== 50){
+                                    echo "Hello World!";
+                            }
+                        ?>
 </body>
 </html>
