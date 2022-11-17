@@ -272,5 +272,40 @@
                                     echo "Hello World!";
                             }
                         ?>
+    
+    /PHP String Operators 
+    . = Concatenation
+    ex.
+                            <?php
+                                $x = "Hello";
+                                $y = " World";
+
+                                echo $x.$y;
+                            ?>
+
+    .= = Concatenation assignment 
+                            <?php
+                                $x = "Hello";
+                                $y = "World";
+
+                                $x .=$y;
+
+                                echo $x;
+                            ?>
+
+    /PHP Array Operators 
+
+    Operator    Name    Example     Result 
+    +           Union   $x + $y     Union of $x and $y;
+                            ex.
+                                $x = array("a" => "red", "b" => "green");
+                                $y = array("c" => "blue", "d" => "yellow");
+
+                                print_r($x + $y);
+                                /output below/
+                                    Array([a]=>red[b]=>green[d]=>yellow)
+
+
+    ==          Equality $x == $y   Returns true if $x and $y have same key/value pair
 </body>
 </html>
