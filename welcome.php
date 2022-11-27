@@ -10,7 +10,7 @@
 <h1>
 <?php
     echo $_GET['name'];
-?>
-</h1>
+    echo "<br>"
+    echo $_GET['email'];
 </body>
 </html>
