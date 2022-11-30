@@ -7,10 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+<h1>Your input</h1>
+<br><br>
 <h1>
-<?php
-    echo $_GET['name'];
-    echo "<br>"
-    echo $_GET['email'];dddeddddssgggggggggggggggggggggggggatatddddd
+<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);
+    echo $_POST['name'];
+    echo "<br>";
+    echo $_POST['email'];
+    echo "<br>";
+    echo $_POST['gender'];
+    echo "<br>";
+    echo $_POST['comment'];
+    echo "<br>";
+    echo $_POST['website'];
+?>
 </body>
 </html>
