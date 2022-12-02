@@ -13,5 +13,11 @@
         
     ?>
     &copy; 2010-<?php echo date("Y");?>
+    <br>
+    <br>
+    <?php
+        date_default_timezone_set("America/New_York");
+        echo "The time is " . date("h:i:sa");
+    ?>
 </body>
 </html>
