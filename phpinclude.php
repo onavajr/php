@@ -7,8 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="menu">
+    <?php
+        include 'menu.php';
+    ?>
     <?php
         include 'footer.php';
+        
         echo readfile("text.txt");
     ?>
 </body>
