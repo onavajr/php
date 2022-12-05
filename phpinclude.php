@@ -9,6 +9,7 @@
 <body>
     <?php
         include 'footer.php';
+        echo readfile("text.txt");
     ?>
 </body>
 </html>
